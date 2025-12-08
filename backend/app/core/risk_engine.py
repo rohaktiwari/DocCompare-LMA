@@ -3,7 +3,13 @@ from typing import List, Dict, Any, Optional
 import os
 
 class LMADocumentParser:
-    """Extracts structured data from LMA-formatted loan documents"""
+    """Regex-based pattern matching for structured LMA covenants.
+    
+    Production Roadmap: 
+    - Expand to 20+ clause types
+    - Implement ML-based entity recognition for robustness against formatting variations
+    - Support PDF/OCR pipeline integration
+    """
     
     def __init__(self):
         # LMA standard clause patterns
@@ -46,7 +52,12 @@ class LMADocumentParser:
         }
 
 class RiskScoringEngine:
-    """Deterministic, rule-based risk scoring - NO AI"""
+    """Deterministic, rule-based risk scoring against LMA market standards.
+    
+    Current Scope:
+    - Benchmarked against standard LMA Leveraged Facility terms
+    - Scores deviations on Low/Medium/High scale based on market practice
+    """
     
     def __init__(self):
         # LMA market standards (calibrated to actual market practice)
@@ -179,7 +190,13 @@ class RiskScoringEngine:
         }
 
 class AIExplanationEngine:
-    """Optional AI layer for plain-English explanations"""
+    """Optional AI layer for plain-English explanations.
+    
+    Role:
+    - Does NOT determine risk (handled deterministically by RiskScoringEngine)
+    - Provides context and "why it matters" explanations for credit committees
+    - Graceful fallback to template-based explanations if API offline
+    """
     
     def __init__(self):
         from dotenv import load_dotenv

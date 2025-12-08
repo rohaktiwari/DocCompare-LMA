@@ -1,0 +1,48 @@
+FACILITY AGREEMENT
+dated [•] 2023
+BORROWER: Acme Industrial Group plc
+ARRANGERS: [Major Bank] plc, [Another Bank] SA
+FACILITY: EUR 500,000,000 Term Loan Facility
+
+SECTION 8. FINANCIAL COVENANTS
+
+8.1 Leverage Ratio
+The Borrower shall ensure that the Leverage Ratio in respect of each Relevant Period shall not exceed 3.00:1.
+For the purposes of this Clause:
+"Leverage Ratio" means the ratio of Consolidated Total Net Debt to Consolidated EBITDA.
+"Relevant Period" means each period of twelve months ending on the last day of each Financial Quarter.
+
+8.2 Interest Cover
+The Borrower shall ensure that the Interest Cover Ratio in respect of each Relevant Period shall not be less than 4.00:1.
+"Interest Cover" means the ratio of Consolidated EBITDA to Consolidated Net Finance Charges.
+
+SECTION 23. EVENTS OF DEFAULT
+
+23.1 Non-payment
+An Event of Default occurs if the Obligor does not pay on the due date any amount payable pursuant to a Finance Document at the place and in the currency in which it is expressed to be payable unless:
+(a) its failure to pay is caused by an administrative or technical error or disruption to payment systems; and
+(b) payment is made within 3 Business Days of its due date.
+
+23.2 Breach of financial covenants
+An Event of Default occurs if the Borrower does not comply with the provisions of Clause 8 (Financial Covenants).
+
+23.3 Cross default
+(a) An Event of Default occurs if:
+    (i) any Financial Indebtedness of any member of the Group is not paid when due nor within any originally applicable grace period;
+    (ii) any Financial Indebtedness of any member of the Group is declared to be or otherwise becomes due and payable prior to its specified maturity; or
+    (iii) any commitment for any Financial Indebtedness of any member of the Group is cancelled or suspended.
+
+SECTION 11. REPRESENTATIONS AND WARRANTIES
+
+11.1 Status
+Each Obligor is a corporation duly incorporated, validly existing and (where relevant) in good standing under the law of its jurisdiction of incorporation.
+
+11.2 Binding obligations
+The obligations expressed to be assumed by each Obligor in each Finance Document are legal, valid, binding and enforceable obligations.
+
+11.3 Non-conflict with other obligations
+The entry into and performance by each Obligor of the Finance Documents do not and will not conflict with:
+(a) any law or regulation applicable to it;
+(b) its constitutional documents; or
+(c) any agreement or instrument binding upon it or any of its assets.
+

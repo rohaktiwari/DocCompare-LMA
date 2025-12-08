@@ -1,0 +1,51 @@
+FACILITY AGREEMENT
+dated [•] 2023
+BORROWER: NewCo Acquisition Limited
+ARRANGERS: Private Credit Fund I LP
+FACILITY: EUR 250,000,000 Term Loan B Facility
+
+SECTION 8. FINANCIAL COVENANTS
+
+8.1 Leverage Ratio
+The Borrower shall ensure that the Leverage Ratio in respect of each Relevant Period shall not exceed 5.50:1.
+Testing: Semi-annually on June 30 and December 31 of each year.
+For the purposes of this Clause:
+"Leverage Ratio" means the ratio of Consolidated Total Net Debt to Adjusted EBITDA.
+"Adjusted EBITDA" includes run-rate cost savings and synergies as agreed with the Agent.
+
+8.2 Interest Cover
+The Borrower shall ensure that the Interest Cover Ratio in respect of each Relevant Period shall not be less than 2.25:1.
+
+SECTION 23. EVENTS OF DEFAULT
+
+23.1 Non-payment
+An Event of Default occurs if the Obligor does not pay on the due date any amount payable pursuant to a Finance Document at the place and in the currency in which it is expressed to be payable unless:
+(a) its failure to pay is caused by an administrative or technical error; and
+(b) payment is made within 7 Business Days of its due date.
+
+23.2 Breach of financial covenants
+An Event of Default occurs if the Borrower does not comply with the provisions of Clause 8 (Financial Covenants) and such breach continues unremedied for 30 days after the earlier of:
+(a) the Borrower becoming aware of the breach; or
+(b) the Agent giving notice to the Borrower of the breach.
+
+23.3 Cross default
+An Event of Default occurs if:
+(a) any Financial Indebtedness of any member of the Group is not paid when due nor within any originally applicable grace period;
+PROVIDED THAT:
+(i) the aggregate amount of such Financial Indebtedness exceeds EUR 10,000,000; and
+(ii) the relevant member of the Group has exhausted all contractual cure rights.
+
+SECTION 12. UNDERTAKINGS
+
+12.1 Negative Pledge
+No Obligor shall (and the Company shall ensure that no other member of the Group will) create or permit to subsist any Security over any of its assets, EXCEPT:
+(a) Permitted Security as defined in Schedule 4;
+(b) Security arising by operation of law in the ordinary course of trading;
+(c) Security over assets with aggregate value not exceeding EUR 15,000,000.
+
+12.2 Disposals
+No Obligor shall enter into a single transaction or series of transactions to sell, lease, transfer or otherwise dispose of any asset EXCEPT:
+(a) Disposals of obsolete or redundant assets on arm's length terms;
+(b) Disposals not exceeding EUR 25,000,000 in aggregate in any Financial Year;
+(c) Disposals to other members of the Group.
+

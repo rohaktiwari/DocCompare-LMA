@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Any
 import os
 from app.core.risk_engine import RiskEngine
 
@@ -20,6 +20,7 @@ class Deviation(BaseModel):
     risk_level: str
     description: str
     recommendation: str
+    metadata: Optional[dict] = None
 
 class AnalysisResult(BaseModel):
     deal_name: str
@@ -33,6 +34,8 @@ class AnalysisResult(BaseModel):
 def get_sample_deals():
     """Returns list of available sample deals for the demo."""
     samples_dir = os.path.join(DATA_DIR, "sample_deals")
+    if not os.path.exists(samples_dir):
+        return {"samples": []}
     files = [f for f in os.listdir(samples_dir) if f.endswith(".txt")]
     return {"samples": files}
 
@@ -74,3 +77,18 @@ async def analyze_deal(request: AnalysisRequest):
         "counts": result["counts"]
     }
 
+@router.post("/add-to-portfolio")
+async def add_analysis_to_portfolio(request: AnalysisRequest):
+    """Analyze a deal AND add it to portfolio"""
+    
+    # Run analysis (reuse existing logic)
+    result = await analyze_deal(request)
+    
+    # Add to portfolio
+    from app.api.portfolio import add_to_portfolio
+    portfolio_result = add_to_portfolio(result)
+    
+    return {
+        "analysis": result,
+        "portfolio_status": portfolio_result
+    }

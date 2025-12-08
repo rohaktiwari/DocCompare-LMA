@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Upload, FileText, AlertTriangle, CheckCircle, ArrowRight, Activity, ChevronRight, X } from 'lucide-react';
-import { analyzeDeal, getSamples } from '../api/client';
+import { analyzeDeal, getSamples, api } from '../api/client';
 import { AnalysisResult, Deviation } from '../types';
 
 const RiskBadge = ({ level }: { level: 'High' | 'Medium' | 'Low' }) => {
@@ -159,6 +159,35 @@ const SingleDealPage = () => {
               </div>
               <div className="text-2xl font-bold text-slate-900">{result.counts.Low}</div>
             </div>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <div>
+                <div className="font-medium text-blue-900">Add to Portfolio</div>
+                <div className="text-sm text-blue-700">Track this deal in your portfolio dashboard</div>
+              </div>
+            </div>
+            <button 
+              onClick={async () => {
+                try {
+                  await api.post('/analyze/add-to-portfolio', {
+                    sample_deal_id: selectedSample,
+                    template_id: "LMA_Leveraged_2023.txt"
+                  });
+                  alert('Added to portfolio successfully!');
+                } catch (err) {
+                  console.error(err);
+                  alert('Failed to add to portfolio');
+                }
+              }}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors"
+            >
+              Add to Portfolio
+            </button>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

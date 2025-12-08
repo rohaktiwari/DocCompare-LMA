@@ -1,0 +1,42 @@
+FACILITY AGREEMENT
+dated October 2021
+BORROWER: Troubled Retail Holdings Limited
+THIRD AMENDMENT dated December 2024
+
+SECTION 8. FINANCIAL COVENANTS (AS AMENDED)
+
+8.1 Leverage Ratio [WAIVED THROUGH Q2 2025]
+The Borrower shall ensure that the Leverage Ratio in respect of each Relevant Period shall not exceed:
+- Q3 2024: 6.50:1 [BREACHED - Waived]
+- Q4 2024: 6.00:1 [AMENDED from original 4.50:1]
+- Q1 2025: 5.75:1 [AMENDED from original 4.00:1]
+- Q2 2025: 5.50:1 [AMENDED from original 3.75:1]
+- Q3 2025 onwards: 4.50:1
+
+NOTE: Leverage covenant suspended for Q3 2024 pursuant to Waiver Letter dated September 15, 2024.
+
+8.2 Interest Cover [AMENDED]
+The Borrower shall ensure that the Interest Cover Ratio in respect of each Relevant Period shall not be less than 1.75:1.
+[Original covenant: 4.00:1 - Amended via First Amendment dated March 2023]
+
+8.3 Liquidity [NEW COVENANT ADDED]
+The Borrower shall at all times maintain unrestricted cash and Cash Equivalents of not less than EUR 15,000,000.
+[Added pursuant to Second Amendment dated June 2024 as condition of leverage covenant relaxation]
+
+SECTION 23. EVENTS OF DEFAULT
+
+23.1 Non-payment
+An Event of Default occurs if the Obligor does not pay on the due date any amount payable pursuant to a Finance Document unless payment is made within 10 Business Days.
+[Original grace period: 3 days - Extended via Third Amendment dated December 2024]
+
+23.3 Cross default
+An Event of Default occurs if any Financial Indebtedness exceeding EUR 20,000,000 is not paid when due.
+[Original threshold: EUR 5,000,000 - Increased via Second Amendment]
+
+AMENDMENT HISTORY:
+- Original Agreement: October 2021
+- First Amendment: March 2023 (Relaxed Interest Cover to 3.50:1)
+- Second Amendment: June 2024 (Relaxed Leverage, added Liquidity covenant, increased Cross Default threshold)
+- Third Amendment: December 2024 (Further leverage relaxation, extended grace period)
+- Waiver Letter: September 2024 (Suspended Q3 2024 Leverage test)
+

@@ -1,0 +1,7 @@
+SECTION 8. REPRESENTATIONS, WARRANTIES AND UNDERTAKINGS
+
+8.1 Financial Covenants
+The Borrower shall ensure that:
+(a) Leverage Ratio: The Leverage Ratio in respect of any Relevant Period shall not exceed 3.00:1.
+(b) Interest Cover: The Interest Cover in respect of any Relevant Period shall not be less than 4.00:1.
+

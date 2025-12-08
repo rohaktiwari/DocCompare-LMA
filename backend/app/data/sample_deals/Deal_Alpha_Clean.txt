@@ -1,0 +1,23 @@
+SECTION 8. REPRESENTATIONS, WARRANTIES AND UNDERTAKINGS
+
+8.1 Financial Covenants
+The Borrower shall ensure that:
+(a) Leverage Ratio: The Leverage Ratio in respect of any Relevant Period shall not exceed 3.00:1.
+(b) Interest Cover: The Interest Cover in respect of any Relevant Period shall not be less than 4.00:1.
+
+8.2 Negative Pledge
+No Obligor shall (and the Company shall ensure that no other member of the Group will) create or permit to subsist any Security over any of its assets.
+
+8.3 Disposals
+No Obligor shall (and the Company shall ensure that no other member of the Group will) enter into a single transaction or a series of transactions (whether related or not) and whether voluntary or involuntary to sell, lease, transfer or otherwise dispose of any asset.
+
+SECTION 23. EVENTS OF DEFAULT
+
+23.1 Non-payment
+The Obligor does not pay on the due date any amount payable pursuant to a Finance Document at the place and in the currency in which it is expressed to be payable unless:
+(a) its failure to pay is caused by administrative or technical error; and
+(b) payment is made within 3 Business Days of its due date.
+
+23.2 Cross default
+Any Financial Indebtedness of any member of the Group is not paid when due nor within any originally applicable grace period.
+

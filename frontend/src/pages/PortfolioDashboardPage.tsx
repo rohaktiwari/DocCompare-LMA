@@ -3,14 +3,14 @@ import { getPortfolio } from '../api/client';
 import { PortfolioItem } from '../types';
 import { Filter, ArrowUpDown, AlertCircle, FileText, Globe, Calendar } from 'lucide-react';
 
-const RiskPill = ({ level }: { level: string }) => {
-  const colors = {
+type RiskLevel = 'High' | 'Medium' | 'Low';
+const RiskPill = ({ level }: { level: RiskLevel }) => {
+  const colors: Record<RiskLevel, string> = {
     High: 'bg-red-100 text-red-700',
     Medium: 'bg-amber-100 text-amber-700',
     Low: 'bg-emerald-100 text-emerald-700',
   };
-  // @ts-ignore
-  return <span className={`px-2 py-0.5 rounded text-xs font-semibold ${colors[level] || 'bg-gray-100'}`}>{level}</span>;
+  return <span className={`px-2 py-0.5 rounded text-xs font-semibold ${colors[level]}`}>{level}</span>;
 };
 
 const PortfolioDashboardPage = () => {

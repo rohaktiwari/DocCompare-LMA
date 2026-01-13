@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Upload, FileText, AlertTriangle, CheckCircle, ArrowRight, Activity, ChevronRight, X } from 'lucide-react';
-import { analyzeDeal, getSamples, api } from '../api/client';
+import { analyzeDeal, getSamples, api, getReportUrl } from '../api/client';
 import { AnalysisResult, Deviation } from '../types';
 
 const RiskBadge = ({ level }: { level: 'High' | 'Medium' | 'Low' }) => {
@@ -113,7 +113,7 @@ const SingleDealPage = () => {
                  Analyze Another
                </button>
                <a 
-                 href={`http://localhost:8000/api/report/${result.deal_name}`}
+                 href={getReportUrl(result.deal_name)}
                  target="_blank"
                  rel="noreferrer"
                  className="bg-white border border-slate-300 text-slate-700 px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-50 flex items-center"

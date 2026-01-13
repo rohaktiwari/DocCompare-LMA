@@ -1,7 +1,16 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 // In production, this would be an env var
-const API_BASE_URL = 'http://localhost:8000/api';
+export const API_BASE_URL = 'http://localhost:8000/api';
+
+export class ApiError extends Error {
+  status: number;
+  constructor(message: string, status: number) {
+    super(message);
+    this.name = 'ApiError';
+    this.status = status;
+  }
+}
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
@@ -9,6 +18,17 @@ export const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+api.interceptors.response.use(
+  (resp) => resp,
+  (error: AxiosError) => {
+    const status = error.response?.status ?? 500;
+    const message = (error.response?.data as any)?.detail ?? error.message;
+    return Promise.reject(new ApiError(message, status));
+  }
+);
+
+export const getReportUrl = (dealName: string) => `${API_BASE_URL.replace('/api','')}/api/report/${encodeURIComponent(dealName)}`;
 
 export const analyzeDeal = async (sampleDealId?: string, dealText?: string) => {
   const response = await api.post('/analyze/', {

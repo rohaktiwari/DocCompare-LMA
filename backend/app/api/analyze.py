@@ -54,10 +54,20 @@ async def analyze_deal(request: AnalysisRequest):
     deal_name = "Uploaded Document"
 
     if request.sample_deal_id:
-        deal_path = os.path.join(DATA_DIR, "sample_deals", request.sample_deal_id)
-        if not os.path.exists(deal_path):
+        # Validate filename to prevent path traversal attacks
+        import re
+        pattern = re.compile(r"^[\w\-.]+$")
+        if not pattern.match(request.sample_deal_id):
+            raise HTTPException(status_code=400, detail="Invalid sample_deal_id")
+
+        tentative_path = os.path.join(DATA_DIR, "sample_deals", request.sample_deal_id)
+        resolved_path = os.path.realpath(tentative_path)
+        if not resolved_path.startswith(os.path.realpath(os.path.join(DATA_DIR, "sample_deals"))):
+            raise HTTPException(status_code=400, detail="Invalid file path")
+
+        if not os.path.exists(resolved_path):
             raise HTTPException(status_code=404, detail="Sample deal not found")
-        with open(deal_path, "r") as f:
+        with open(resolved_path, "r") as f:
             deal_text = f.read()
         deal_name = request.sample_deal_id.replace(".txt", "").replace("_", " ")
     elif request.deal_text:
